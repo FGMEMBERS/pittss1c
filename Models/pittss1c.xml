@@ -1,0 +1,230 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>s1c.ac</path>
+
+  <offsets>
+    <x-m>-1.65</x-m>
+    <y-m>0.0</y-m>
+    <z-m>0.0</z-m>
+  </offsets>
+
+ <!-- panel models -->
+ <model>
+  <path>Aircraft/Instruments-3d/asi-260-knot.xml</path>
+  <offsets>
+   <x-m>1.79</x-m>
+   <y-m>-0.1</y-m>
+   <z-m>0.15</z-m>
+  </offsets>
+ </model>
+
+  <model>
+    <path>Aircraft/Instruments-3d/mag-compass.xml</path>
+    <offsets>
+      <x-m>1.79</x-m>
+      <y-m> 0.0</y-m>
+      <z-m>0.19</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Instruments-3d/vsi-6/vsi-3d.xml</path>
+    <offsets>
+      <x-m>1.79</x-m>
+      <y-m> 0.1</y-m>
+      <z-m>0.15</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Instruments-3d/alt/alt.xml</path>
+    <offsets>
+      <x-m>1.79</x-m>
+      <y-m>-0.0</y-m>
+      <z-m>0.12</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Instruments-3d/tc/tc.xml</path>
+    <offsets>
+      <x-m>1.82</x-m>
+      <y-m>-0.1</y-m>
+      <z-m>0.07</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Instruments-3d/tach/tach.xml</path>
+    <offsets>
+      <x-m>1.79</x-m>
+      <y-m> 0.1</y-m>
+      <z-m>0.05</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Instruments-3d/magneto-switch/mags.xml</path>
+    <offsets>
+      <x-m>1.79</x-m>
+      <y-m>-0.18</y-m>
+      <z-m>0.1</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/pittss1c/Models/GMeter/GMeter.xml</path>
+    <offsets>
+      <x-m>1.82</x-m>
+      <y-m>-0.18</y-m>
+      <z-m>0.05</z-m>
+    </offsets>
+  </model>
+
+
+  <model>
+    <path>Aircraft/Instruments-3d/egt/egt.xml</path>
+    <offsets>
+      <x-m>1.82</x-m>
+      <y-m> 0.18</y-m>
+      <z-m> 0.05</z-m>
+    </offsets>
+  </model>
+
+  <animation>
+  <type>noshadow</type>
+  <object-name>PropDisk</object-name>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>Propeller</object-name>
+  <condition>
+   <less-than>
+    <property>engines/engine[0]/rpm</property>
+    <value>350</value>
+   </less-than>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>PropDisk</object-name>
+  <condition>
+   <greater-than>
+    <property>engines/engine[0]/rpm</property>
+    <value>300</value>
+   </greater-than>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>spin</type>
+  <object-name>Propeller</object-name>
+  <property>engines/engine[0]/rpm</property>
+  <factor>-1</factor>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+  <axis>
+   <x>1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>spin</type>
+  <object-name>PropDisk</object-name>
+  <property>engines/engine[0]/rpm</property>
+  <factor>-0.01</factor>
+  <center>
+    <x-m>0.0</x-m>
+    <y-m>0.0</y-m>
+    <z-m>0.0</z-m>
+  </center>
+  <axis>
+   <x>1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>LeftAileron</object-name>
+  <property>surface-positions/left-aileron-pos-norm</property>
+  <factor>-18.0</factor>
+   <axis>
+     <x1-m>2.05</x1-m>
+     <y1-m>-0.81</y1-m>
+     <z1-m>-0.4</z1-m>
+     <x2-m>2.04</x2-m>
+     <y2-m>-2.32</y2-m>
+     <z2-m>-0.31</z2-m>
+   </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>RightAileron</object-name>
+  <property>surface-positions/right-aileron-pos-norm</property>
+  <factor>18.0</factor>
+   <axis>
+     <x1-m>2.05</x1-m>
+     <y1-m>0.81</y1-m>
+     <z1-m>-0.4</z1-m>
+     <x2-m>2.04</x2-m>
+     <y2-m>2.32</y2-m>
+     <z2-m>-0.31</z2-m>
+   </axis>
+ </animation>
+
+ <animation>
+   <type>rotate</type>
+  <object-name>Elevator</object-name>
+  <property>surface-positions/elevator-pos-norm</property>
+  <interpolation>
+   <entry>
+    <ind>-1</ind>
+    <dep>-29</dep>
+   </entry>
+   <entry>
+    <ind>1</ind>
+    <dep>34</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>3.956</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+  <axis>
+   <x>0.0</x>
+   <y>1.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Rudder</object-name>
+  <property>surface-positions/rudder-pos-norm</property>
+  <factor>30.0</factor>
+  <center>
+   <x-m>4.224</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.29</z-m>
+  </center>
+  <axis>
+   <x>0.0</x>
+   <y>0.0</y>
+   <z>1.0</z>
+  </axis>
+ </animation>
+
+</PropertyList>
