@@ -1,18 +1,10 @@
 <?xml version="1.0"?>
-<!--
-************************************************************************
-Piper J3 Cub simulation config. This files ties together all the components
-used by FGFS to represent the J3 Cub. Components include the flight data 
-model, instrument panel, and external 3D model.
-3D models can be downloaded from http://home.t-online.de/home/Wolfram.Kuss/
-************************************************************************
--->
 
 <PropertyList>
  <sim>
 
   <description>Pitts S1C</description>
-  <author>Stuart Buchanan</author>
+  <author>Stuart Buchanan, Dave Perry</author>
   <status>beta</status>
 
   <flight-model>yasim</flight-model>
@@ -36,21 +28,31 @@ model, instrument panel, and external 3D model.
      <config>
        <x-offset-m archive="y">0.0</x-offset-m>
        <y-offset-m archive="y">0.3</y-offset-m>
-<!--       <z-offset-m archive="y">2.3</z-offset-m> -->
-       <z-offset-m archive="y">0.65</z-offset-m>
+       <z-offset-m archive="y">0.6</z-offset-m>
        <pitch-offset-deg>-8.5</pitch-offset-deg>
+       <default-field-of-view-deg>65</default-field-of-view-deg>
      </config>
    </view>
 
    <help>
      <title>Pitts S1C</title>
      <line></line>
-     <line>Aerobatic Biplane, with 180hp Lycoming O-360</line>
+     <line>Aerobatic Biplane with 180hp Lycoming O-360</line>
      <line></line>
      <line>Stall: 57mph</line>
-     <line>Cruise (75%): 154</line>
-     <line>Vne: 203</line>
+     <line>Cruise (75%): 154mph</line>
+     <line>Vne: 203mph</line>
      <line>Rate of climb: 2650fpm</line>
+     <line></line>
+     <line>Takeoff: Hold the stick fully back, advance throttle to 100%,</line>
+     <line>steer with rudder. As the ASI reaches 45mph raise the tail by</line>
+     <line>bringing the stick forward to neutral. Be ready with right aileron</line>
+     <line>and rudder to counteract P-factor.</line>
+     <line></line>
+     <line>Landing: Fly a tight base leg, using side-slip to improve visibility.</line>
+     <line>Aim to be over the numbers at 80mph. Flare to 3-point stall landing,</line>
+     <line>or wheeled landing. Once on the ground, pin the tail down using </line>
+     <line>elevator. Be careful when applying brakes to avoid a nose-over.</line>
    </help>
  </sim>
 
@@ -62,9 +64,9 @@ model, instrument panel, and external 3D model.
 
  <controls>
   <flight>
-   <aileron-trim>0.005</aileron-trim>   <!-- fixed -->
+   <aileron-trim>0.035</aileron-trim>   <!-- fixed -->
    <elevator-trim>0.088</elevator-trim> <!-- controllable -->
-   <rudder-trim>0.075</rudder-trim>     <!-- fixed -->
+   <rudder-trim>0.007</rudder-trim>     <!-- fixed -->
   </flight>
   <engines>
    <engine n="0">

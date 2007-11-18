@@ -9,10 +9,29 @@
     <y-m>0.0</y-m>
     <z-m>0.0</z-m>
   </offsets>
+  
+  <!-- General Models -->
+  <model>
+    <path>Aircraft/pittss1c/Models/Stick/stick.xml</path>
+    <offsets>
+      <x-m>1.8</x-m>
+      <y-m>0.0</y-m>
+      <z-m>-0.4</z-m>
+    </offsets>
+  </model>
 
- <!-- panel models -->
+  <model>
+    <path>Aircraft/pittss1c/Models/Throttle/throttle.xml</path>
+    <offsets>
+      <x-m>1.9</x-m>
+      <y-m>-0.264</y-m>
+      <z-m>-0.0</z-m>
+    </offsets>
+  </model>
+
+  <!-- panel models -->
  <model>
-  <path>Aircraft/Instruments-3d/asi-260-knot.xml</path>
+  <path>Aircraft/pittss1c/Models/ASI/asi.xml</path>
   <offsets>
    <x-m>1.79</x-m>
    <y-m>-0.1</y-m>
@@ -57,7 +76,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Instruments-3d/tach/tach.xml</path>
+    <path>Aircraft/pittss1c/Models/Tach/tach.xml</path>
     <offsets>
       <x-m>1.79</x-m>
       <y-m> 0.1</y-m>
