@@ -64,7 +64,7 @@
 
  <controls>
   <flight>
-   <aileron-trim>0.035</aileron-trim>   <!-- fixed -->
+   <aileron-trim>0.0</aileron-trim>   <!-- fixed -->
    <elevator-trim>0.088</elevator-trim> <!-- controllable -->
    <rudder-trim>0.007</rudder-trim>     <!-- fixed -->
   </flight>
