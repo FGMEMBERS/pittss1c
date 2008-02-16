@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+  <!-- OSG Particles -->
+  <particlesystem>
+    <name>smoke</name>
+
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.000 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+
+    <texture>smoke.rgb</texture>
+
+    <emissive>false</emissive>
+    <lighting>false</lighting>
+    <align>billboard</align> <!-- billboard / fixed -->
+    <attach>world</attach> <!-- world / local-->
+
+    <placer>
+      <type>point</type> <!-- sector / segments / point -->
+    </placer>
+
+    <shooter>
+      <theta-min-deg>84</theta-min-deg>
+      <theta-max-deg>86</theta-max-deg>
+      <phi-min-deg>-1.5</phi-min-deg>
+      <phi-max-deg>1.5</phi-max-deg>
+      <speed>
+        <value>10</value>
+        <spread>2.5</spread>
+      </speed>
+      <rotspeed>
+        <minx>5</minx>
+        <miny>5</miny>
+        <minz>5</minz>
+        <maxx>25</maxx>
+        <maxy>25</maxy>
+        <maxz>25</maxz>
+      </rotspeed>
+    </shooter>
+
+    <counter>
+      <pps>
+        <value>500</value>
+        <spread>2.5</spread>
+      </pps>
+        
+      <condition>
+        <property>sim/multiplay/generic/int[0]</property>
+      </condition>        
+    </counter>
+      
+    <particle>
+      <startcolor>
+        <red><value>0.8</value></red>
+        <green><value>0.2</value></green>
+        <blue><value>0.2</value></blue>
+        <alpha><value>0.4</value></alpha>
+      </startcolor>
+        
+      <endcolor>
+        <red><value>0.7</value></red>
+        <green><value>0.5</value></green>
+        <blue><value>0.5</value></blue>
+        <alpha><value>1</value></alpha>
+      </endcolor>
+        
+      <startsize>
+        <value>0.3</value>
+      </startsize>
+
+      <endsize>
+        <value>5.0</value>
+      </endsize>
+        
+      <life-sec>
+        <value>20</value>
+      </life-sec>
+        
+      <mass-kg>0.1</mass-kg>
+      <radius-m>1.0</radius-m>
+    </particle>
+      
+    <program>
+      <fluid>air</fluid>         <!-- air / water -->
+      <gravity>enable</gravity>  <!-- enabled / disabled -->
+      <wind>enable</wind>        <!-- enabled / disabled -->
+    </program>
+      
+  </particlesystem>
+
+</PropertyList>
+

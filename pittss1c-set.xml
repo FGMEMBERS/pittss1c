@@ -53,6 +53,10 @@
      <line>Aim to be over the numbers at 80mph. Flare to 3-point stall landing,</line>
      <line>or wheeled landing. Once on the ground, pin the tail down using </line>
      <line>elevator. Be careful when applying brakes to avoid a nose-over.</line>
+     <key>
+       <name>S</name>
+       <desc>Toggle smoke on/off</desc>
+     </key>
    </help>
  </sim>
 
@@ -73,7 +77,8 @@
     <magnetos>3</magnetos>
    </engine>
   </engines>
- </controls>
+  <smoke alias="/sim/multiplay/generic/int[0]"/>
+</controls>
 
  <engines>
   <engine>
@@ -106,5 +111,18 @@
     <pilot-gmin>1.0</pilot-gmin>
     <pilot-gmax>1.0</pilot-gmax>
   </accelerations>
+  
+  <input>
+    <keyboard>  
+      <key n="83">
+        <name>S</name>
+        <desc>Toggle smoke</desc>
+          <binding>
+          <command>property-toggle</command>
+          <property>controls/smoke</property>
+        </binding>
+      </key>
+    </keyboard>
+  </input>
 
 </PropertyList>

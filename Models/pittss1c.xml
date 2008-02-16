@@ -111,6 +111,18 @@
       <z-m> 0.05</z-m>
     </offsets>
   </model>
+  
+  <model>
+    <path>Aircraft/pittss1c/Particles/smoke.xml</path>
+    <offsets>
+      <x-m>  2.0 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.6 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>  
 
   <animation>
   <type>noshadow</type>
