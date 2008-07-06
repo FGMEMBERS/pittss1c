@@ -17,7 +17,7 @@ OBJECT poly
 name "TailWheel.001_1"
 data 12
 Cylinder.001
-texture "struts.rgb"
+texture "Liveries/Yellow/struts.rgb"
 texrep 1 1
 crease 30.000000
 numvert 40
@@ -345,7 +345,7 @@ OBJECT poly
 name "TailWheel.001_0"
 data 8
 Cylinder
-texture "tyres.rgb"
+texture "Liveries/Yellow/tyres.rgb"
 texrep 1 1
 crease 30.000000
 numvert 62
@@ -627,7 +627,7 @@ OBJECT poly
 name "TailWheel.001_2"
 data 12
 Cylinder.003
-texture "wheel.rgb"
+texture "Liveries/Yellow/wheel.rgb"
 texrep 1 1
 crease 30.000000
 numvert 64
@@ -1067,7 +1067,7 @@ OBJECT poly
 name "TopWing.001_0"
 data 10
 Circle.007
-texture "topwingtop.rgb"
+texture "Liveries/Yellow/topwingtop.rgb"
 texrep 1 1
 crease 30.000000
 numvert 332
@@ -3674,7 +3674,7 @@ OBJECT poly
 name "TopWing.001_1"
 data 6
 Circle
-texture "topwingbottom.rgb"
+texture "Liveries/Yellow/topwingbottom.rgb"
 texrep 1 1
 crease 30.000000
 numvert 214
@@ -5177,7 +5177,7 @@ OBJECT poly
 name "Rudder"
 data 8
 Cube.003
-texture "rudderport.rgb"
+texture "Liveries/Yellow/rudderport.rgb"
 texrep 1 1
 crease 30.000000
 numvert 84
@@ -5845,7 +5845,7 @@ OBJECT poly
 name "LeftGearLeg"
 data 8
 Cube.004
-texture "struts.rgb"
+texture "Liveries/Yellow/struts.rgb"
 texrep 1 1
 crease 30.000000
 numvert 16
@@ -5969,7 +5969,7 @@ OBJECT poly
 name "PortWHeel_1"
 data 12
 Cylinder.004
-texture "wheel.rgb"
+texture "Liveries/Yellow/wheel.rgb"
 texrep 1 1
 crease 30.000000
 numvert 66
@@ -6429,7 +6429,7 @@ OBJECT poly
 name "PortWHeel_0"
 data 12
 Cylinder.008
-texture "tyres.rgb"
+texture "Liveries/Yellow/tyres.rgb"
 texrep 1 1
 crease 30.000000
 numvert 64
@@ -6727,7 +6727,7 @@ OBJECT poly
 name "RightGearLeg"
 data 8
 Cube.005
-texture "struts.rgb"
+texture "Liveries/Yellow/struts.rgb"
 texrep 1 1
 crease 30.000000
 numvert 16
@@ -6843,7 +6843,7 @@ OBJECT poly
 name "RightAileron.001_1"
 data 10
 Circle.006
-texture "bottomwingtop.rgb"
+texture "Liveries/Yellow/bottomwingtop.rgb"
 texrep 1 1
 crease 30.000000
 numvert 12
@@ -6919,7 +6919,7 @@ OBJECT poly
 name "RightAileron.001_0"
 data 10
 Circle.017
-texture "bottomwingbottom.rgb"
+texture "Liveries/Yellow/bottomwingbottom.rgb"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -6964,7 +6964,7 @@ OBJECT poly
 name "Fuselage_2"
 data 10
 Circle.003
-texture "fuselageport.rgb"
+texture "Liveries/Yellow/fuselageport.rgb"
 texrep 1 1
 crease 30.000000
 numvert 312
@@ -9118,7 +9118,7 @@ OBJECT poly
 name "Fuselage_3"
 data 10
 Circle.004
-texture "interior.rgb"
+texture "Liveries/Yellow/interior.rgb"
 texrep 1 1
 crease 30.000000
 numvert 107
@@ -9840,7 +9840,7 @@ OBJECT poly
 name "Fuselage_0"
 data 10
 Circle.001
-texture "fuselagestarboard.rgb"
+texture "Liveries/Yellow/fuselagestarboard.rgb"
 texrep 1 1
 crease 30.000000
 numvert 180
@@ -11068,7 +11068,7 @@ OBJECT poly
 name "Fuselage_1"
 data 10
 Circle.002
-texture "cylinder.rgb"
+texture "Liveries/Yellow/cylinder.rgb"
 texrep 1 1
 crease 30.000000
 numvert 28
@@ -11218,7 +11218,7 @@ OBJECT poly
 name "Fuselage_4"
 data 10
 Circle.005
-texture "panel.rgb"
+texture "Liveries/Yellow/panel.rgb"
 texrep 1 1
 crease 30.000000
 numvert 13
@@ -11288,7 +11288,7 @@ OBJECT poly
 name "BottomWing.001_1"
 data 10
 Circle.008
-texture "bottomwingtop.rgb"
+texture "Liveries/Yellow/bottomwingtop.rgb"
 texrep 1 1
 crease 30.000000
 numvert 375
@@ -14203,7 +14203,7 @@ OBJECT poly
 name "BottomWing.001_0"
 data 10
 Circle.019
-texture "bottomwingbottom.rgb"
+texture "Liveries/Yellow/bottomwingbottom.rgb"
 texrep 1 1
 crease 30.000000
 numvert 240
@@ -15905,7 +15905,7 @@ OBJECT poly
 name "Windshield_2_2"
 data 10
 Circle.011
-texture "perspex.rgb"
+texture "Liveries/Yellow/perspex.rgb"
 texrep 1 1
 crease 30.000000
 numvert 760
@@ -22313,7 +22313,7 @@ OBJECT poly
 name "Windshield_2_1"
 data 10
 Circle.010
-texture "leather.rgb"
+texture "Liveries/Yellow/leather.rgb"
 texrep 1 1
 crease 30.000000
 numvert 260
@@ -24657,7 +24657,7 @@ OBJECT poly
 name "LeftStrut"
 data 10
 Circle.015
-texture "struts.rgb"
+texture "Liveries/Yellow/struts.rgb"
 texrep 1 1
 crease 30.000000
 numvert 144
@@ -25707,7 +25707,7 @@ OBJECT poly
 name "Propeller"
 data 12
 Cylinder.010
-texture "prop.rgb"
+texture "Liveries/Yellow/prop.rgb"
 texrep 1 1
 crease 30.000000
 numvert 68
@@ -26393,7 +26393,7 @@ OBJECT poly
 name "RightSpat"
 data 10
 Sphere.001
-texture "spats.rgb"
+texture "Liveries/Yellow/spats.rgb"
 texrep 1 1
 crease 30.000000
 numvert 474
@@ -30177,7 +30177,7 @@ OBJECT poly
 name "Truss"
 data 12
 Cylinder.006
-texture "struts.rgb"
+texture "Liveries/Yellow/struts.rgb"
 texrep 1 1
 crease 30.000000
 numvert 240
@@ -32555,7 +32555,7 @@ OBJECT poly
 name "Radiator"
 data 8
 Cube.006
-texture "radiator.rgb"
+texture "Liveries/Yellow/radiator.rgb"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -32615,7 +32615,7 @@ OBJECT poly
 name "LeftSpat"
 data 6
 Sphere
-texture "spats.rgb"
+texture "Liveries/Yellow/spats.rgb"
 texrep 1 1
 crease 30.000000
 numvert 474
@@ -36405,7 +36405,7 @@ OBJECT poly
 name "Stabilizer_1_1"
 data 10
 Circle.018
-texture "tailtop.rgb"
+texture "Liveries/Yellow/tailtop.rgb"
 texrep 1 1
 crease 30.000000
 numvert 60
@@ -36841,7 +36841,7 @@ OBJECT poly
 name "Stabilizer_1_0"
 data 10
 Circle.016
-texture "tailbottom.rgb"
+texture "Liveries/Yellow/tailbottom.rgb"
 texrep 1 1
 crease 30.000000
 numvert 60
@@ -37277,7 +37277,7 @@ OBJECT poly
 name "GearStrut"
 data 12
 Cylinder.005
-texture "struts.rgb"
+texture "Liveries/Yellow/struts.rgb"
 texrep 1 1
 crease 30.000000
 numvert 68
@@ -37969,7 +37969,7 @@ OBJECT poly
 name "LeftAileron_1_0"
 data 10
 Circle.020
-texture "bottomwingbottom.rgb"
+texture "Liveries/Yellow/bottomwingbottom.rgb"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -38008,7 +38008,7 @@ OBJECT poly
 name "LeftAileron_1_1"
 data 10
 Circle.021
-texture "bottomwingtop.rgb"
+texture "Liveries/Yellow/bottomwingtop.rgb"
 texrep 1 1
 crease 30.000000
 numvert 12
@@ -38084,7 +38084,7 @@ OBJECT poly
 name "PropHub"
 data 10
 Sphere.002
-texture "hub.rgb"
+texture "Liveries/Yellow/hub.rgb"
 texrep 1 1
 crease 30.000000
 numvert 257
@@ -40127,7 +40127,7 @@ OBJECT poly
 name "Elevator"
 data 10
 Circle.022
-texture "tailbottom.rgb"
+texture "Liveries/Yellow/tailbottom.rgb"
 texrep 1 1
 crease 30.000000
 numvert 90
@@ -40965,7 +40965,7 @@ OBJECT poly
 name "Tailplane.001_2"
 data 8
 Cube.002
-texture "tailstarboard.rgb"
+texture "Liveries/Yellow/tailstarboard.rgb"
 texrep 1 1
 crease 30.000000
 numvert 74
@@ -41474,7 +41474,7 @@ OBJECT poly
 name "Tailplane.001_0"
 data 8
 Cube.001
-texture "tailstarboard.rgb"
+texture "Liveries/Yellow/tailstarboard.rgb"
 texrep 1 1
 crease 30.000000
 numvert 36
@@ -41618,7 +41618,7 @@ OBJECT poly
 name "Tailplane.001_1"
 data 4
 Cube
-texture "tailport.rgb"
+texture "Liveries/Yellow/tailport.rgb"
 texrep 1 1
 crease 30.000000
 numvert 104
@@ -42415,7 +42415,7 @@ OBJECT poly
 name "StarboardWheel_1"
 data 12
 Cylinder.009
-texture "wheel.rgb"
+texture "Liveries/Yellow/wheel.rgb"
 texrep 1 1
 crease 30.000000
 numvert 66
@@ -42875,7 +42875,7 @@ OBJECT poly
 name "StarboardWheel_0"
 data 12
 Cylinder.007
-texture "tyres.rgb"
+texture "Liveries/Yellow/tyres.rgb"
 texrep 1 1
 crease 30.000000
 numvert 64
@@ -43173,7 +43173,7 @@ OBJECT poly
 name "RightStrut"
 data 10
 Circle.023
-texture "struts.rgb"
+texture "Liveries/Yellow/struts.rgb"
 texrep 1 1
 crease 30.000000
 numvert 144

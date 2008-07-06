@@ -21,6 +21,9 @@
 
   <model>
     <path archive="y">Aircraft/pittss1c/Models/pittss1c.xml</path>
+    <livery>
+      <file type="string">Yellow</file>
+    </livery>
   </model>
 
    <view>
@@ -56,6 +59,10 @@
      <key>
        <name>S</name>
        <desc>Toggle smoke on/off</desc>
+     </key>
+     <key>
+       <name>l</name>
+       <desc>Livery select</desc>
      </key>
    </help>
  </sim>
@@ -120,6 +127,14 @@
           <binding>
           <command>property-toggle</command>
           <property>controls/smoke</property>
+        </binding>
+      </key>
+      <key n="108">
+        <name>l</name>
+        <desc>Show livery select dialog</desc>
+        <binding>
+          <command>nasal</command>
+          <script>aircraft.livery.dialog.toggle()</script>
         </binding>
       </key>
     </keyboard>

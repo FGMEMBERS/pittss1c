@@ -15,3 +15,4 @@ gmeterUpdate = func {
 
 setlistener("/sim/signals/fdm-initialized",gmeterUpdate);
 
+aircraft.livery.init("Aircraft/pittss1c/Models/Liveries/");
