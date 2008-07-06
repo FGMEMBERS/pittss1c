@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>../../../Instruments-3d/controls/switch-small-rnd.ac</path>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>lever</object-name>
+    <property>controls/smoke</property>
+    <factor>30</factor>
+    <center>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>lever</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/smoke</property>
+      </binding>
+    </action>
+  </animation>
+
+</PropertyList>

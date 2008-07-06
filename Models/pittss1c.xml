@@ -123,6 +123,25 @@
   </model>
   
   <model>
+    <path>Aircraft/pittss1c/Models/Switches/smoke.xml</path>
+    <offsets>
+      <x-m> 1.79</x-m>
+      <y-m> 0.18</y-m>
+      <z-m> 0.10</z-m>
+      <pitch-deg>90.000 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/pittss1c/Models/Switches/smoke-sign.ac</path>
+    <offsets>
+      <x-m> 1.79</x-m>
+      <y-m> 0.173</y-m>
+      <z-m> 0.12</z-m>
+    </offsets>
+  </model>
+
+  <model>
     <path>Aircraft/pittss1c/Particles/smoke.xml</path>
     <offsets>
       <x-m>  2.0 </x-m>
@@ -548,4 +567,12 @@
     <property-base>sim/model/livery/material/RightStrut</property-base>
     <texture-prop>texture</texture-prop>
   </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Seat</object-name>
+    <property-base>sim/model/livery/material/Seat</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
 </PropertyList>

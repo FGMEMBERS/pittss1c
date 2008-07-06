@@ -126,6 +126,9 @@
          <RightStrut>
           <texture>Liveries/MZ/struts.rgb</texture>
          </RightStrut>
+         <Seat>
+           <texture>Liveries/MZ/leather.rgb</texture>
+         </Seat>
         </material>
       </livery>
     </model>

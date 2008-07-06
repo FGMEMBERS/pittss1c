@@ -22,7 +22,7 @@
   <model>
     <path archive="y">Aircraft/pittss1c/Models/pittss1c.xml</path>
     <livery>
-      <file type="string">Yellow</file>
+      <file type="string"/>
     </livery>
   </model>
 
@@ -118,13 +118,13 @@
     <pilot-gmin>1.0</pilot-gmin>
     <pilot-gmax>1.0</pilot-gmax>
   </accelerations>
-  
+
   <input>
-    <keyboard>  
+    <keyboard>
       <key n="83">
         <name>S</name>
         <desc>Toggle smoke</desc>
-          <binding>
+        <binding>
           <command>property-toggle</command>
           <property>controls/smoke</property>
         </binding>

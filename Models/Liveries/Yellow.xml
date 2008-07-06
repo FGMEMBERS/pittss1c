@@ -126,6 +126,9 @@
          <RightStrut>
           <texture>Liveries/Yellow/struts.rgb</texture>
          </RightStrut>
+         <Seat>
+           <texture>Liveries/Yellow/leather.rgb</texture>
+         </Seat>
         </material>
       </livery>
     </model>
