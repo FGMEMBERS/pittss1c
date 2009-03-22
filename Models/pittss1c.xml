@@ -79,7 +79,7 @@
   <model>
     <path>Aircraft/Instruments-3d/tc/tc.xml</path>
     <offsets>
-      <x-m>1.82</x-m>
+      <x-m>1.79</x-m>
       <y-m>-0.1</y-m>
       <z-m>0.07</z-m>
     </offsets>
@@ -106,7 +106,7 @@
   <model>
     <path>Aircraft/pittss1c/Models/GMeter/GMeter.xml</path>
     <offsets>
-      <x-m>1.82</x-m>
+      <x-m>1.79</x-m>
       <y-m>-0.18</y-m>
       <z-m>0.05</z-m>
     </offsets>
@@ -116,7 +116,7 @@
   <model>
     <path>Aircraft/Instruments-3d/egt/egt.xml</path>
     <offsets>
-      <x-m>1.82</x-m>
+      <x-m>1.79</x-m>
       <y-m> 0.18</y-m>
       <z-m> 0.05</z-m>
     </offsets>

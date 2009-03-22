@@ -1,6 +1,6 @@
 AC3Db
 MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
-MATERIAL "RubberGrip" rgb 0.182398 0.182398 0.182398 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "RubberGrip" rgb 0.182398 0.182398 0.182398 amb 0.176788 0.176788 0.176788 emis 0 0 0 spec 0.339022 0.339022 0.339022 shi 32 trans 0
 MATERIAL "RedButton" rgb 0.830903 0 0 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
 MATERIAL "Steel" rgb 0.688771 0.688771 0.688771 amb 0.5 0.5 0.5 emis 0 0 0 spec 0.803831 0.803831 0.803831 shi 32 trans 0
 OBJECT world
