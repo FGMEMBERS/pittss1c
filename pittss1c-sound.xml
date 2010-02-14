@@ -11,6 +11,11 @@
    <volume>
     <offset>0.4</offset>
    </volume>
+   <position>
+     <x>-0.8</x>
+     <y>0.0</y>
+     <z>0.0</y>
+   </position>
   </crank>
 
   <crank>
@@ -26,6 +31,11 @@
    <volume>
     <offset>0.5</offset>
    </volume>
+   <position>
+     <x>-0.8</x>
+     <y>0.0</y>
+     <z>0.0</y>
+   </position>
   </crank>
 
   <crank>
@@ -35,6 +45,11 @@
    <volume>
     <offset>0.4</offset>
    </volume>
+   <position>
+     <x>-0.8</x>
+     <y>0.0</y>
+     <z>0.0</y>
+   </position>
   </crank>
 
   <engine>
@@ -54,11 +69,13 @@
     <min>1.0</min>
     <max>1.5</max>
    </volume>
+<!--   
    <volume>
     <property>/sim/current-view/internal</property>
     <offset>1.0</offset>
     <factor>-0.7</factor>
    </volume>
+-->   
    <pitch>
     <property>/engines/engine/rpm</property>
     <factor>0.0004</factor>
@@ -66,8 +83,14 @@
     <max>2.0</max>
     <offset>0.15</offset>
    </pitch>
+   <position>
+     <x>-0.8</x>
+     <y>0.0</y>
+     <z>0.0</y>
+   </position>
   </engine>
 
+<!--
   <propeller>
    <name>propeller</name>
    <mode>looped</mode>
@@ -91,6 +114,7 @@
     <offset>0.9</offset>
    </pitch>
   </propeller>
+-->  
 
   <rumble>
    <name>rumble</name>
@@ -167,34 +191,7 @@
     <offset>1.25</offset>
    </pitch>
   </wind>
- 
-  <stall>
-   <name>stall</name>
-   <mode>looped</mode>
-   <path>Sounds/stall.wav</path>
-   <condition>
-    <and>
-     <property>/sim/alarms/stall-warning</property>
-     <greater-than>
-       <property>/velocities/airspeed-kt</property>
-       <value>10</value>
-     </greater-than>
-     <not>
-       <property>/gear/gear[0]/wow</property>
-       <property>/gear/gear[1]/wow</property>
-       <property>/gear/gear[2]/wow</property>
-     </not>
-    </and>
-    <!-- <property>/sim/current-view/internal</property> -->
-   </condition>
-   <volume>
-    <property>/sim/alarms/stall-warning</property>
-    <max>1.0</max>
-   </volume>
-   <reference-dist>10.0</reference-dist>
-   <max-dist>20.0</max-dist>
-  </stall>
- 
+
 <!-- no binding yet?
   <click>
    <name>click</name>
