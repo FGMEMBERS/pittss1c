@@ -14,7 +14,7 @@
    <position>
      <x>-0.8</x>
      <y>0.0</y>
-     <z>0.0</y>
+     <z>0.0</z>
    </position>
   </crank>
 
@@ -34,7 +34,7 @@
    <position>
      <x>-0.8</x>
      <y>0.0</y>
-     <z>0.0</y>
+     <z>0.0</z>
    </position>
   </crank>
 
@@ -48,7 +48,7 @@
    <position>
      <x>-0.8</x>
      <y>0.0</y>
-     <z>0.0</y>
+     <z>0.0</z>
    </position>
   </crank>
 
@@ -86,7 +86,7 @@
    <position>
      <x>-0.8</x>
      <y>0.0</y>
-     <z>0.0</y>
+     <z>0.0</z>
    </position>
   </engine>
 

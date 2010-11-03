@@ -286,8 +286,116 @@
       <z>1.0</z>
     </axis>
   </animation>
-  
-  <!-- Livery Animations -->
+
+<!-- Right Main Gear -->  
+  <animation>
+    <type>rotate</type>
+    <object-name>RightWheel</object-name>
+    <object-name>RightSpat</object-name>
+    <object-name>RightGearLeg</object-name>
+   <property>gear/gear[2]/compression-rotation-deg</property>
+    <factor>1.0</factor>
+    <center>
+      <x-m>1.093781</x-m>
+      <y-m>0.229035</y-m>
+      <z-m>-0.491864</z-m>
+    </center>
+    <axis>
+      <x>1.0</x>
+      <y>0.0</y>
+      <z>0.0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>GearStrutRight</object-name>
+   <property>gear/gear[2]/compression-rotation-deg</property>
+    <factor>1.0</factor>
+    <center>
+      <x-m>1.27879</x-m>
+      <y-m>0.117911</y-m>
+      <z-m>-0.542203</z-m>
+    </center>
+    <axis>
+      <x>1.0</x>
+      <y>0.0</y>
+      <z>0.0</z>
+    </axis>
+  </animation>
+
+<!-- Left Main Gear -->
+  <animation>
+    <type>rotate</type>
+    <object-name>LeftWheel</object-name>
+    <object-name>LeftSpat</object-name>
+    <object-name>LeftGearLeg</object-name>
+   <property>gear/gear[1]/compression-rotation-deg</property>
+    <factor>-1.0</factor>
+    <center>
+      <x-m>1.093781</x-m>
+      <y-m>-0.229035</y-m>
+      <z-m>-0.491864</z-m>
+    </center>
+    <axis>
+      <x>1.0</x>
+      <y>0.0</y>
+      <z>0.0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>GearStrutLeft</object-name>
+   <property>gear/gear[1]/compression-rotation-deg</property>
+    <factor>-1.0</factor>
+    <center>
+      <x-m>1.27879</x-m>
+      <y-m>-0.117911</y-m>
+      <z-m>-0.542203</z-m>
+    </center>
+    <axis>
+      <x>1.0</x>
+      <y>0.0</y>
+      <z>0.0</z>
+    </axis>
+  </animation>
+
+ <animation>
+   <type>spin</type>
+   <object-name>LeftWheel</object-name>
+   <property>gear/gear[1]/rollspeed-ms</property>
+   <factor>-20.59</factor>
+   <center>
+     <x-m>1.106715</x-m> 
+     <y-m>-0.617</y-m>
+     <z-m>-1.002593</z-m>
+   </center>
+   <axis>
+     <x>0.0</x>
+     <y>1.0</y>
+     <z>0.0</z>
+   </axis>
+ </animation>
+
+ <animation>
+   <type>spin</type>
+   <object-name>RightWheel</object-name>
+   <property>gear/gear[2]/rollspeed-ms</property>
+   <factor>-20.59</factor>
+   <center>
+     <x-m>1.106715</x-m> 
+     <y-m>0.617</y-m>
+     <z-m>-1.002593</z-m>
+   </center>
+   <axis>
+     <x>0.0</x>
+     <y>1.0</y>
+     <z>0.0</z>
+   </axis>
+ </animation>
+
+   <!-- Livery Animations -->
   <animation>
     <type>material</type>
     <object-name>TailWheel.001_1</object-name>
@@ -339,14 +447,14 @@
   
   <animation>
     <type>material</type>
-    <object-name>PortWHeel_1</object-name>
+    <object-name>LeftWheel</object-name>
     <property-base>sim/model/livery/material/PortWHeel_1</property-base>
     <texture-prop>texture</texture-prop>
   </animation>
   
   <animation>
     <type>material</type>
-    <object-name>PortWHeel_0</object-name>
+    <object-name>LeftWheel</object-name>
     <property-base>sim/model/livery/material/PortWHeel_0</property-base>
     <texture-prop>texture</texture-prop>
   </animation>
@@ -493,7 +601,8 @@
   
   <animation>
     <type>material</type>
-    <object-name>GearStrut</object-name>
+    <object-name>GearStrutLeft</object-name>
+    <object-name>GearStrutRight</object-name>
     <property-base>sim/model/livery/material/GearStrut</property-base>
     <texture-prop>texture</texture-prop>
   </animation>
@@ -549,14 +658,14 @@
   
   <animation>
     <type>material</type>
-    <object-name>StarboardWheel_1</object-name>
+    <object-name>RightWheel</object-name>
     <property-base>sim/model/livery/material/StarboardWheel_1</property-base>
     <texture-prop>texture</texture-prop>
   </animation>
   
   <animation>
     <type>material</type>
-    <object-name>StarboardWheel_0</object-name>
+    <object-name>RightWheel</object-name>
     <property-base>sim/model/livery/material/StarboardWheel_0</property-base>
     <texture-prop>texture</texture-prop>
   </animation>
