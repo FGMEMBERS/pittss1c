@@ -42220,7 +42220,7 @@ name "LeftWheel"
 loc 1.10652 -1.00178 0.617939
 data 12
 Cylinder.004
-texture "/home/dad/Desktop/pittss1c/Models/Liveries/Yellow/wheel.rgb"
+texture "Liveries/Yellow/wheel.rgb"
 crease 30.000000
 numvert 130
 -1.43051e-06 0.197728 0.0603165
