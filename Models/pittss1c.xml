@@ -293,7 +293,7 @@
     <object-name>RightWheel</object-name>
     <object-name>RightSpat</object-name>
     <object-name>RightGearLeg</object-name>
-   <property>gear/gear[2]/compression-rotation-deg</property>
+   <property>gear/gear[2]/compression-norm</property>
     <factor>1.0</factor>
     <center>
       <x-m>1.093781</x-m>
@@ -305,12 +305,13 @@
       <y>0.0</y>
       <z>0.0</z>
     </axis>
+    <interpolation include="MainRotationInterpolation.xml"/>
   </animation>
 
   <animation>
     <type>rotate</type>
     <object-name>GearStrutRight</object-name>
-   <property>gear/gear[2]/compression-rotation-deg</property>
+   <property>gear/gear[2]/compression-norm</property>
     <factor>1.0</factor>
     <center>
       <x-m>1.27879</x-m>
@@ -322,6 +323,7 @@
       <y>0.0</y>
       <z>0.0</z>
     </axis>
+    <interpolation include="MainRotationInterpolation.xml"/>
   </animation>
 
 <!-- Left Main Gear -->
@@ -330,7 +332,7 @@
     <object-name>LeftWheel</object-name>
     <object-name>LeftSpat</object-name>
     <object-name>LeftGearLeg</object-name>
-   <property>gear/gear[1]/compression-rotation-deg</property>
+   <property>gear/gear[1]/compression-norm</property>
     <factor>-1.0</factor>
     <center>
       <x-m>1.093781</x-m>
@@ -342,12 +344,13 @@
       <y>0.0</y>
       <z>0.0</z>
     </axis>
+    <interpolation include="MainRotationInterpolation.xml"/>
   </animation>
 
   <animation>
     <type>rotate</type>
     <object-name>GearStrutLeft</object-name>
-   <property>gear/gear[1]/compression-rotation-deg</property>
+   <property>gear/gear[1]/compression-norm</property>
     <factor>-1.0</factor>
     <center>
       <x-m>1.27879</x-m>
@@ -359,6 +362,7 @@
       <y>0.0</y>
       <z>0.0</z>
     </axis>
+    <interpolation include="MainRotationInterpolation.xml"/>
   </animation>
 
  <animation>

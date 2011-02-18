@@ -110,7 +110,6 @@
   <nasal>
     <pittss1c>
       <file>Aircraft/pittss1c/Nasal/pittss1c.nas</file>
-      <file>Aircraft/pittss1c/Nasal/action-sim.nas</file>
     </pittss1c>
   </nasal>
 
