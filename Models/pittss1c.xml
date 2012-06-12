@@ -19,7 +19,14 @@
     <y-m>0.0</y-m>
     <z-m>0.0</z-m>
   </offsets>
-  
+
+  <!-- Transparent Surfaces for Rembrandt rendering -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>Windshield_2_2</object-name>
+    <object-name>PropDisk</object-name>
+  </effect>
+
   <!-- General Models -->
   <model>
     <path>Aircraft/pittss1c/Models/Stick/stick.xml</path>
