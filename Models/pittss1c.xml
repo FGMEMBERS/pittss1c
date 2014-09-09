@@ -1,0 +1,698 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>s1c.ac</path>
+
+  <nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/pittss1c/Models/Liveries", 30);
+    </load>
+
+    <unload>
+      livery_update.stop();
+    </unload>
+  </nasal>
+
+  <offsets>
+    <x-m>0.0</x-m>
+    <y-m>0.0</y-m>
+    <z-m>0.0</z-m>
+  </offsets>
+
+  <!-- Transparent Surfaces for Rembrandt rendering -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>Windshield_2_2</object-name>
+    <object-name>PropDisk</object-name>
+  </effect>
+
+  <!-- General Models -->
+  <model>
+    <path>Aircraft/pittss1c/Models/Stick/stick.xml</path>
+    <offsets>
+      <x-m>1.8</x-m>
+      <y-m>0.0</y-m>
+      <z-m>-0.4</z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/pittss1c/Models/Throttle/throttle.xml</path>
+    <offsets>
+      <x-m>1.9</x-m>
+      <y-m>-0.264</y-m>
+      <z-m>-0.0</z-m>
+    </offsets>
+  </model>
+  
+  <!-- panel models -->
+  <model>
+    <path>Aircraft/pittss1c/Models/ASI/asi.xml</path>
+    <offsets>
+      <x-m>1.79</x-m>
+      <y-m>-0.1</y-m>
+      <z-m>0.15</z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Instruments-3d/mag-compass.xml</path>
+    <offsets>
+      <x-m>1.79</x-m>
+      <y-m> 0.0</y-m>
+      <z-m>0.19</z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Instruments-3d/vsi-6/vsi-3d.xml</path>
+    <offsets>
+      <x-m>1.79</x-m>
+      <y-m> 0.1</y-m>
+      <z-m>0.15</z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Instruments-3d/alt/alt.xml</path>
+    <offsets>
+      <x-m>1.79</x-m>
+      <y-m>-0.0</y-m>
+      <z-m>0.12</z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Instruments-3d/tc/tc.xml</path>
+    <offsets>
+      <x-m>1.79</x-m>
+      <y-m>-0.1</y-m>
+      <z-m>0.07</z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/pittss1c/Models/Tach/tach.xml</path>
+    <offsets>
+      <x-m>1.79</x-m>
+      <y-m> 0.1</y-m>
+      <z-m>0.05</z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Instruments-3d/magneto-switch/mags.xml</path>
+    <offsets>
+      <x-m>1.79</x-m>
+      <y-m>-0.18</y-m>
+      <z-m>0.1</z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/pittss1c/Models/GMeter/GMeter.xml</path>
+    <offsets>
+      <x-m>1.79</x-m>
+      <y-m>-0.18</y-m>
+      <z-m>0.05</z-m>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <path>Aircraft/Instruments-3d/egt/egt.xml</path>
+    <offsets>
+      <x-m>1.79</x-m>
+      <y-m> 0.18</y-m>
+      <z-m> 0.05</z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/pittss1c/Models/Switches/smoke.xml</path>
+    <offsets>
+      <x-m> 1.79</x-m>
+      <y-m> 0.18</y-m>
+      <z-m> 0.10</z-m>
+      <pitch-deg>90.000 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/pittss1c/Models/Switches/smoke-sign.ac</path>
+    <offsets>
+      <x-m> 1.79</x-m>
+      <y-m> 0.173</y-m>
+      <z-m> 0.12</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/pittss1c/Particles/smoke.xml</path>
+    <offsets>
+      <x-m>  2.0 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.6 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>  
+  
+  <animation>
+    <type>noshadow</type>
+    <object-name>PropDisk</object-name>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>Propeller</object-name>
+    <condition>
+      <less-than>
+        <property>engines/engine[0]/rpm</property>
+        <value>350</value>
+      </less-than>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>PropDisk</object-name>
+    <condition>
+      <greater-than>
+        <property>engines/engine[0]/rpm</property>
+        <value>300</value>
+      </greater-than>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>spin</type>
+    <object-name>Propeller</object-name>
+    <property>engines/engine[0]/rpm</property>
+    <factor>-1</factor>
+    <center>
+      <x-m>0.0</x-m>
+      <y-m>0.0</y-m>
+      <z-m>0.0</z-m>
+    </center>
+    <axis>
+      <x>1.0</x>
+      <y>0.0</y>
+      <z>0.0</z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>spin</type>
+    <object-name>PropDisk</object-name>
+    <property>engines/engine[0]/rpm</property>
+    <factor>-0.01</factor>
+    <center>
+      <x-m>0.0</x-m>
+      <y-m>0.0</y-m>
+      <z-m>0.0</z-m>
+    </center>
+    <axis>
+      <x>1.0</x>
+      <y>0.0</y>
+      <z>0.0</z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>LeftAileron</object-name>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor>-18.0</factor>
+    <axis>
+      <x1-m>2.05</x1-m>
+      <y1-m>-0.81</y1-m>
+      <z1-m>-0.4</z1-m>
+      <x2-m>2.04</x2-m>
+      <y2-m>-2.32</y2-m>
+      <z2-m>-0.31</z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>RightAileron</object-name>
+    <property>surface-positions/right-aileron-pos-norm</property>
+    <factor>18.0</factor>
+    <axis>
+      <x1-m>2.05</x1-m>
+      <y1-m>0.81</y1-m>
+      <z1-m>-0.4</z1-m>
+      <x2-m>2.04</x2-m>
+      <y2-m>2.32</y2-m>
+      <z2-m>-0.31</z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>Elevator</object-name>
+    <property>surface-positions/elevator-pos-norm</property>
+    <interpolation>
+      <entry>
+        <ind>-1</ind>
+        <dep>-29</dep>
+      </entry>
+      <entry>
+        <ind>1</ind>
+        <dep>34</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>3.956</x-m>
+      <y-m>0.0</y-m>
+      <z-m>0.0</z-m>
+    </center>
+    <axis>
+      <x>0.0</x>
+      <y>1.0</y>
+      <z>0.0</z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>Rudder</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor>30.0</factor>
+    <center>
+      <x-m>4.224</x-m>
+      <y-m>0.0</y-m>
+      <z-m>0.29</z-m>
+    </center>
+    <axis>
+      <x>0.0</x>
+      <y>0.0</y>
+      <z>1.0</z>
+    </axis>
+  </animation>
+
+<!-- Right Main Gear -->  
+  <animation>
+    <type>rotate</type>
+    <object-name>RightWheel</object-name>
+    <object-name>RightSpat</object-name>
+    <object-name>RightGearLeg</object-name>
+   <property>gear/gear[2]/compression-norm</property>
+    <factor>1.0</factor>
+    <center>
+      <x-m>1.093781</x-m>
+      <y-m>0.229035</y-m>
+      <z-m>-0.491864</z-m>
+    </center>
+    <axis>
+      <x>1.0</x>
+      <y>0.0</y>
+      <z>0.0</z>
+    </axis>
+    <interpolation include="MainRotationInterpolation.xml"/>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>GearStrutRight</object-name>
+   <property>gear/gear[2]/compression-norm</property>
+    <factor>1.0</factor>
+    <center>
+      <x-m>1.27879</x-m>
+      <y-m>0.117911</y-m>
+      <z-m>-0.542203</z-m>
+    </center>
+    <axis>
+      <x>1.0</x>
+      <y>0.0</y>
+      <z>0.0</z>
+    </axis>
+    <interpolation include="MainRotationInterpolation.xml"/>
+  </animation>
+
+<!-- Left Main Gear -->
+  <animation>
+    <type>rotate</type>
+    <object-name>LeftWheel</object-name>
+    <object-name>LeftSpat</object-name>
+    <object-name>LeftGearLeg</object-name>
+   <property>gear/gear[1]/compression-norm</property>
+    <factor>-1.0</factor>
+    <center>
+      <x-m>1.093781</x-m>
+      <y-m>-0.229035</y-m>
+      <z-m>-0.491864</z-m>
+    </center>
+    <axis>
+      <x>1.0</x>
+      <y>0.0</y>
+      <z>0.0</z>
+    </axis>
+    <interpolation include="MainRotationInterpolation.xml"/>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>GearStrutLeft</object-name>
+   <property>gear/gear[1]/compression-norm</property>
+    <factor>-1.0</factor>
+    <center>
+      <x-m>1.27879</x-m>
+      <y-m>-0.117911</y-m>
+      <z-m>-0.542203</z-m>
+    </center>
+    <axis>
+      <x>1.0</x>
+      <y>0.0</y>
+      <z>0.0</z>
+    </axis>
+    <interpolation include="MainRotationInterpolation.xml"/>
+  </animation>
+
+ <animation>
+   <type>spin</type>
+   <object-name>LeftWheel</object-name>
+   <property>gear/gear[1]/rollspeed-ms</property>
+   <factor>-20.59</factor>
+   <center>
+     <x-m>1.106715</x-m> 
+     <y-m>-0.617</y-m>
+     <z-m>-1.002593</z-m>
+   </center>
+   <axis>
+     <x>0.0</x>
+     <y>1.0</y>
+     <z>0.0</z>
+   </axis>
+ </animation>
+
+ <animation>
+   <type>spin</type>
+   <object-name>RightWheel</object-name>
+   <property>gear/gear[2]/rollspeed-ms</property>
+   <factor>-20.59</factor>
+   <center>
+     <x-m>1.106715</x-m> 
+     <y-m>0.617</y-m>
+     <z-m>-1.002593</z-m>
+   </center>
+   <axis>
+     <x>0.0</x>
+     <y>1.0</y>
+     <z>0.0</z>
+   </axis>
+ </animation>
+
+   <!-- Livery Animations -->
+  <animation>
+    <type>material</type>
+    <object-name>TailWheel.001_1</object-name>
+    <property-base>sim/model/livery/material/TailWheel-001_1</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>TailWheel.001_0</object-name>
+    <property-base>sim/model/livery/material/TailWheel-001_0</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>TailWheel.001_2</object-name>
+    <property-base>sim/model/livery/material/TailWheel-001_2</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>TopWing.001_0</object-name>
+    <property-base>sim/model/livery/material/TopWing-001_0</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>TopWing.001_1</object-name>
+    <property-base>sim/model/livery/material/TopWing-001_1</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Rudder</object-name>
+    <property-base>sim/model/livery/material/Rudder</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>LeftGearLeg</object-name>
+    <property-base>sim/model/livery/material/LeftGearLeg</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>LeftWheel</object-name>
+    <property-base>sim/model/livery/material/PortWHeel_1</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>LeftWheel</object-name>
+    <property-base>sim/model/livery/material/PortWHeel_0</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>RightGearLeg</object-name>
+    <property-base>sim/model/livery/material/RightGearLeg</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>RightAileron.001_1</object-name>
+    <property-base>sim/model/livery/material/RightAileron-001_1</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>RightAileron.001_0</object-name>
+    <property-base>sim/model/livery/material/RightAileron-001_0</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Fuselage_2</object-name>
+    <property-base>sim/model/livery/material/Fuselage_2</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Fuselage_3</object-name>
+    <property-base>sim/model/livery/material/Fuselage_3</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Fuselage_0</object-name>
+    <property-base>sim/model/livery/material/Fuselage_0</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Fuselage_1</object-name>
+    <property-base>sim/model/livery/material/Fuselage_1</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Fuselage_4</object-name>
+    <property-base>sim/model/livery/material/Fuselage_4</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>BottomWing.001_1</object-name>
+    <property-base>sim/model/livery/material/BottomWing-001_1</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>BottomWing.001_0</object-name>
+    <property-base>sim/model/livery/material/BottomWing-001_0</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Windshield_2_2</object-name>
+    <property-base>sim/model/livery/material/Windshield_2_2</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Windshield_2_1</object-name>
+    <property-base>sim/model/livery/material/Windshield_2_1</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>LeftStrut</object-name>
+    <property-base>sim/model/livery/material/LeftStrut</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Propeller</object-name>
+    <property-base>sim/model/livery/material/Propeller</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>RightSpat</object-name>
+    <property-base>sim/model/livery/material/RightSpat</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Truss</object-name>
+    <property-base>sim/model/livery/material/Truss</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Radiator</object-name>
+    <property-base>sim/model/livery/material/Radiator</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>LeftSpat</object-name>
+    <property-base>sim/model/livery/material/LeftSpat</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Stabilizer_1_1</object-name>
+    <property-base>sim/model/livery/material/Stabilizer_1_1</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Stabilizer_1_0</object-name>
+    <property-base>sim/model/livery/material/Stabilizer_1_0</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>GearStrutLeft</object-name>
+    <object-name>GearStrutRight</object-name>
+    <property-base>sim/model/livery/material/GearStrut</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>LeftAileron_1_0</object-name>
+    <property-base>sim/model/livery/material/LeftAileron_1_0</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>LeftAileron_1_1</object-name>
+    <property-base>sim/model/livery/material/LeftAileron_1_1</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>PropHub</object-name>
+    <property-base>sim/model/livery/material/PropHub</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Elevator</object-name>
+    <property-base>sim/model/livery/material/Elevator</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Tailplane.001_2</object-name>
+    <property-base>sim/model/livery/material/Tailplane-001_2</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Tailplane.001_0</object-name>
+    <property-base>sim/model/livery/material/Tailplane-001_0</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Tailplane.001_1</object-name>
+    <property-base>sim/model/livery/material/Tailplane-001_1</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>RightWheel</object-name>
+    <property-base>sim/model/livery/material/StarboardWheel_1</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>RightWheel</object-name>
+    <property-base>sim/model/livery/material/StarboardWheel_0</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>RightStrut</object-name>
+    <property-base>sim/model/livery/material/RightStrut</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Seat</object-name>
+    <property-base>sim/model/livery/material/Seat</property-base>
+    <texture-prop>texture</texture-prop>
+  </animation>
+  
+</PropertyList>
