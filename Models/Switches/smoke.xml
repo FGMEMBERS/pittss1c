@@ -2,7 +2,7 @@
 
 <PropertyList>
 
-  <path>../../../Instruments-3d/controls/switch-small-rnd.ac</path>
+  <path>Aircraft/Instruments-3d/controls/switch-small-rnd.ac</path>
 
   <animation>
     <type>rotate</type>
