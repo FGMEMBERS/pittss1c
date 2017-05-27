@@ -4,6 +4,20 @@
  <sim>
 
   <description>Pitts S1C</description>
+  <long-description>The Pitts Special S1C is a lightweight single-seat aerobatic biplane designed by Curtis Pitts.  The S1C was amateur built from plans, this particular model powered by a 180hp Lycoming O-360.  The Pitts biplanes dominated world aerobatic competition in the 1960s and 1970s.</long-description>
+  <tags>
+    <tag>pitts</tag>
+    <tag>biplane</tag>
+    <tag>1950s</tag>
+    <tag>1960s</tag>
+    <tag>1970s</tag>
+    <tag>fixed-gear</tag>
+    <tag>tail-dragger</tag>
+    <tag>biplane</tag>
+    <tag>piston</tag>
+    <tag>1-engine</tag>
+  </tags>
+
   <author>Stuart Buchanan, Dave Perry</author>
   <status>beta</status>
   <rating>
@@ -16,7 +30,7 @@
   <flight-model>yasim</flight-model>
   <aero>pittss1c</aero>
   <fuel-fraction>0.8</fuel-fraction>
-  
+
   <sound>
    <path>Aircraft/pittss1c/pittss1c-sound.xml</path>
   </sound>
@@ -99,7 +113,7 @@
   </engine>
  </engines>
 
- <!-- An autopilot on a Pitts??? -->  
+ <!-- An autopilot on a Pitts??? -->
  <autopilot>
    <config>
      <min-climb-speed-kt type="float">80.0</min-climb-speed-kt>
