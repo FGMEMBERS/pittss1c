@@ -18,6 +18,30 @@
     <tag>1-engine</tag>
   </tags>
 
+  <previews>
+    <preview>
+      <type>exterior</type>
+      <splash type="bool">true</splash>
+      <path>exterior1.jpg</path>
+    </preview>
+    <preview>
+      <type>exterior</type>
+      <splash type="bool">true</splash>
+      <path>exterior2.jpg</path>
+    </preview>
+    <preview>
+      <type>exterior</type>
+      <splash type="bool">true</splash>
+      <path>exterior3.jpg</path>
+    </preview>
+    <preview>
+      <type>panel</type>
+      <splash type="bool">false</splash>
+      <path>cockpit.jpg</path>
+    </preview>
+  </previews>
+
+
   <author>Stuart Buchanan, Dave Perry</author>
   <status>beta</status>
   <rating>
